@@ -18,26 +18,19 @@ bottoneverifica.addEventListener('click',
 
    console.log("la mail inserita è: " + mailUtente);
 
-   // if (mailUtente !== mailAccesso) {
-   //   alert("accesso non consentito");
-   //
-   // } else {
-   //   alert("accesso consentito");
-   // }
-
+   // stampare un messaggio
    for (var i = 0; i < mailAccesso.length; i++) {
      console.log(mailAccesso[i]);
 
-     if (mailUtente !== mailAccesso[i]) {
-       // alert("accesso non consentito");
-       console.log("non valido");
+     if (mailUtente === mailAccesso[i]) {
+       alert("accesso consentito");
+       console.log("valido");
 
      } else {
-       // alert("accesso consentito");
+       alert("accesso non consentito");
+       console.log("non valido");
      }
+
    }
 
-
 } );
-
-// stampare un messaggio

@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+/* regole container */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #B1FB17;
+  color: #fff;
+}
+
+/* regole password */
+.container #risultato{
+  padding: 20px 40px;
+  margin-top: 40px;
+  border-radius: 15px;
+  background-color: #fff;
+  color: #000;
+}
+
+.container #risultato:hover{
+  transform: scale(1.1);
+  color: #666666;
+  cursor: pointer;
+}

@@ -27,5 +27,9 @@ bottone.addEventListener('click',
      document.getElementById('risultato').innerHTML = "PAREGGIO!"
    }
 
+   document.getElementById('miorisultato').innerHTML = "Hai fatto: " + lancioUtente;
+
+   document.getElementById('risultatopc').innerHTML = "Il PC ha fatto: " + lancioCumputer;
+
 } );
 // definire il vincitore

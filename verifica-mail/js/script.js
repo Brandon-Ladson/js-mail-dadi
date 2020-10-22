@@ -28,7 +28,7 @@ bottoneverifica.addEventListener('click',
 
    if (mailPeraccesso === true) {
      alert("accesso consentito");
-     
+
    } else {
      alert("accesso non consentito");
    }

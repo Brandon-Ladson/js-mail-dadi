@@ -14,23 +14,23 @@ var bottoneverifica = document.getElementById('bottoneverifica');
 bottoneverifica.addEventListener('click',
  function() {
 
-   mailUtente = document.getElementById('mailutente').value;
+   var mailPeraccesso = false;
 
-   console.log("la mail inserita è: " + mailUtente);
+   mailUtente = document.getElementById('mailutente').value;
 
    // stampare un messaggio
    for (var i = 0; i < mailAccesso.length; i++) {
-     console.log(mailAccesso[i]);
 
      if (mailUtente === mailAccesso[i]) {
-       alert("accesso consentito");
-       console.log("valido");
-
-     } else {
-       alert("accesso non consentito");
-       console.log("non valido");
+       mailPeraccesso = true;
      }
+   }
 
+   if (mailPeraccesso === true) {
+     alert("accesso consentito");
+     
+   } else {
+     alert("accesso non consentito");
    }
 
 } );
